@@ -1,0 +1,22 @@
+=== FTCS (Euler explícito) ===
+r =  0.01: P inicial = 1.000000, P final = 1.344e+25 tras 60000 pasos
+r =  0.05: P inicial = 1.000000, P final = 1.025e+30 tras 2736 pasos
+r =  0.10: P inicial = 1.000000, P final = 1.110e+30 tras 723 pasos
+r =  0.50: P inicial = 1.000000, P final = 4.722e+30 tras 67 pasos
+
+=== Crank-Nicolson ===
+dx = 1.0e-03 m, dt = 1.0e-04 s, r = 5.00, k0*dx = 0.050
+P(0) = 0.999999999999
+max |P(t) - P(0)| = 2.22e-13
+
+Error vs. solución exacta (imágenes):
+  t = 0.04 s: max|rho_num - rho_exacta| = 6.84e-03  (max rho = 6.24)
+  t = 0.14 s: max|rho_num - rho_exacta| = 2.03e-02  (max rho = 9.84)
+  t = 0.25 s: max|rho_num - rho_exacta| = 1.74e-02  (max rho = 1.95)
+
+Convergencia en t = 0.25 s (error máximo en rho):
+  Nx =   500, dt = 2e-04: error = 6.909e-02
+  Nx =  1000, dt = 1e-04: error = 1.741e-02
+  Nx =  2000, dt = 5e-05: error = 4.362e-03
+
+Figuras guardadas en: /home/user/Bono_FisicaMatematica_ValeriaGiraldoA/figuras
